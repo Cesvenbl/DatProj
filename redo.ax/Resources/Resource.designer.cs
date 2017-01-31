@@ -44,14 +44,14 @@ namespace redo.ax
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int editText1 = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int editText1 = 2131099648;
 			
-			// aapt resource value: 0x7f050001
-			public const int editText2 = 2131034113;
+			// aapt resource value: 0x7f060001
+			public const int editText2 = 2131099649;
 			
-			// aapt resource value: 0x7f050002
-			public const int myButton = 2131034114;
+			// aapt resource value: 0x7f060002
+			public const int myButton = 2131099650;
 			
 			static Id()
 			{
@@ -113,6 +113,22 @@ namespace redo.ax
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int Theme_Custom = 2131034112;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}
