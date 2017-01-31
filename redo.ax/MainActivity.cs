@@ -4,7 +4,7 @@ using Android.OS;
 
 namespace redo.ax
 {
-	[Activity(Label = "redo.ax", MainLauncher = true, Icon = "@drawable/icon")]
+	[Activity(Label = "redo.ax", MainLauncher = true, Icon = "@drawable/logo")]
 	public class MainActivity : Activity
 	{
 		//int count = 1;
