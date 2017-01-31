@@ -20,7 +20,7 @@ namespace redo.ax
 			// and attach an event to it
 			Button button = FindViewById<Button>(Resource.Id.myButton);
 
-			button.Click += delegate { button.Text = "Loggar in"; };
+			button.Click += delegate { SetContentView(Resource.Layout.Main); };
 		}
 	}
 }
