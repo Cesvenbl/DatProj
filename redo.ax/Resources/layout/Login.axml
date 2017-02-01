@@ -9,7 +9,7 @@
         android:inputType="textEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText1"
+        android:id="@+id/emailBox"
         android:hint="E-mail"
         android:layout_marginBottom="34.5dp"
         android:layout_marginTop="26.0dp" />
@@ -17,7 +17,7 @@
         android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText2"
+        android:id="@+id/passwordBox"
         android:hint="Lösenord"
         android:layout_marginBottom="24.0dp" />
     <Button

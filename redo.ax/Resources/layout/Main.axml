@@ -4,4 +4,82 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
-    android:minHeight="25px" />
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="28.5dp"
+        android:id="@+id/linearLayout2"
+        android:layout_marginBottom="0.0dp"
+        android:layout_marginTop="0.0dp"
+        android:layout_marginRight="0.0dp">
+        <TextView
+            android:text="Arbets Tid m.m"
+            android:layout_width="match_parent"
+            android:layout_height="29.0dp"
+            android:id="@+id/textView1"
+            android:textSize="20dp"
+            android:layout_marginTop="0.0dp"
+            android:layout_marginBottom="0.0dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3">
+        <TextView
+            android:text="Time since start"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView2" />
+        <TextView
+            android:text="@string/timerValue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/timerValue" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4">
+        <TextView
+            android:text="Time Paused"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView3" />
+        <TextView
+            android:text="@string/timerPause"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/timerPause" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearbuttonlayout">
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:text="@string/buttonStart"
+            android:layout_gravity="bottom" />
+        <Button
+            android:id="@+id/pauseButton"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:text="@string/buttonPause"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+</LinearLayout>

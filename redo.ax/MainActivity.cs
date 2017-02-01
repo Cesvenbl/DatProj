@@ -2,6 +2,7 @@
 using Android.Widget;
 using Android.OS;
 
+
 namespace redo.ax
 {
 	[Activity(Label = "redo.ax", MainLauncher = true, Icon = "@drawable/logo")]
@@ -21,7 +22,10 @@ namespace redo.ax
 			Button button = FindViewById<Button>(Resource.Id.myButton);
 
 			button.Click += delegate { SetContentView(Resource.Layout.Main); };
+
+
 		}
 	}
+
 }
 
