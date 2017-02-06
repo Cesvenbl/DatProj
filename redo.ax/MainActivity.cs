@@ -1,4 +1,8 @@
-﻿using Android.App;
+﻿using System.Timers;
+using System;
+using System.Threading;
+
+using Android.App;
 using Android.Widget;
 using Android.OS;
 
@@ -20,12 +24,30 @@ namespace redo.ax
 			// Get our button from the layout resource,
 			// and attach an event to it
 			Button button = FindViewById<Button>(Resource.Id.myButton);
+			TextView textview = FindViewById<TextView>(Resource.Id.timerValue);
 
 			button.Click += delegate { SetContentView(Resource.Layout.Main); };
 
+			ThreadPool.QueueUserWorkItem (o => toimer());
 
 		}
-	}
 
+		public static System.Timers.Timer aTimer;
+
+		public static void toimer() {
+			//en timer med en sekunds interval
+			aTimer = new System.Timers.Timer(1000);
+			aTimer.Elapsed += OnTimedEvent;
+			aTimer.Enabled = true;
+
+		}
+
+		static void OnTimedEvent(object sender, ElapsedEventArgs e)
+		{
+
+			RunOnUiThread(() => textview.text();
+		}
+	
+	}
 }
 
